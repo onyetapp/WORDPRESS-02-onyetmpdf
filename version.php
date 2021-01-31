@@ -31,7 +31,6 @@ $plugin->version   = 2020110900;       // The current module version (Date: YYYY
 $plugin->requires  = 2020110300;
 $plugin->cron     = 0;
 $plugin->component = 'mod_ompdf';
-$plugin->maturity = MATURITY_BETA;
-$plugin->release  = '1.0';
+$plugin->release  = '1.02';
 
 $feedback_version_intern = 1; //this version is used for restore older backups

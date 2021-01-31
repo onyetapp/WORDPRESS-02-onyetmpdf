@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
  
 /**
- * The EVENTNAME event.
+ * The Vew All event.
  *
  * @package    mod_ompdf
- * @copyright  2014 YOUR NAME
+ * @copyright  2021 Dian Mukti Wibowo
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 namespace mod_ompdf\event;

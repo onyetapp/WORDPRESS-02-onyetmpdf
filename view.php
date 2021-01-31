@@ -36,7 +36,7 @@ require_login($course, true, $cm);
 require_capability('mod/ompdf:view', $context);
 
 // Redirect to course section if trying to view inline folder.
-if ($ompdf->get_instance()->display == PDFJS_FOLDER_DISPLAY_INLINE) {
+if ($ompdf->get_instance()->display == OMPDF_MANAGER_DISPLAY_INLINE) {
     // Get sectionid for fragment id section references to work.
     $sectionid = $DB->get_field('course_sections',
                                 'section',
@@ -56,12 +56,11 @@ $completion = new completion_info($course);
 $completion->set_module_viewed($cm);
 
 // Log viewing.
-add_to_log($course->id,
-           'ompdf',
-           'view',
-           $url,
-           $ompdf->get_instance()->id,
-           $cm->id);
+$event = \mod_ompdf\event\view_all::create(array(
+    'objectid' => $ompdf->get_instance()->id,
+    'context' => context_module::instance($cm->id)
+));
+$event->trigger();
 
 $renderer = $PAGE->get_renderer('mod_ompdf');
 echo $renderer->render_ompdf($ompdf);

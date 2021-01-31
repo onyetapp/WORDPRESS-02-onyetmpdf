@@ -100,7 +100,7 @@ class mod_ompdf_renderer extends plugin_renderer_base {
             return $output;
         }
 
-        if ($instance->display == PDFJS_FOLDER_DISPLAY_INLINE &&
+        if ($instance->display == OMPDF_MANAGER_DISPLAY_INLINE &&
                 $cm->showdescription &&
                 !empty($instance->intro)) {
             $output .= format_module_intro('ompdf',
@@ -109,13 +109,13 @@ class mod_ompdf_renderer extends plugin_renderer_base {
                                            false);
         }
 
-        if ($instance->display != PDFJS_FOLDER_DISPLAY_INLINE) {
+        if ($instance->display != OMPDF_MANAGER_DISPLAY_INLINE) {
             $output .= $this->pdf_header($ompdf, $cm);
         }
 
         $output .= $this->pdfs($ompdf, $cm);
 
-        if ($instance->display != PDFJS_FOLDER_DISPLAY_INLINE) {
+        if ($instance->display != OMPDF_MANAGER_DISPLAY_INLINE) {
             $output .= $this->pdf_footer($cm);
         }
 
@@ -299,7 +299,7 @@ class mod_ompdf_renderer extends plugin_renderer_base {
         $output  = '';
 
         // Open folder div.
-        $id = 'pdfjs_folder_' . ($treecounter++);
+        $id = 'ompdf_manager_' . ($treecounter++);
         $output .= $this->output->container_start('ompdf-onyet filemanager',
                                                   $id);
 

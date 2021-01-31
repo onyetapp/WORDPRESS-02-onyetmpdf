@@ -68,8 +68,8 @@ class mod_ompdf_mod_form extends moodleform_mod {
             'select',
             'display',
             get_string('display', 'ompdf'),
-            array(PDFJS_FOLDER_DISPLAY_PAGE => get_string('displaypage', 'ompdf'),
-                  PDFJS_FOLDER_DISPLAY_INLINE => get_string('displayinline', 'ompdf')));
+            array(OMPDF_MANAGER_DISPLAY_PAGE => get_string('displaypage', 'ompdf'),
+                  OMPDF_MANAGER_DISPLAY_INLINE => get_string('displayinline', 'ompdf')));
         $mform->addHelpButton('display', 'display', 'ompdf');
 
         // Option for showing sub-folders expanded or collapsed.
@@ -150,7 +150,7 @@ class mod_ompdf_mod_form extends moodleform_mod {
                 array_key_exists('completion', $data) &&
                 $data['completion'] == COMPLETION_TRACKING_AUTOMATIC &&
                 !empty($data['completionview']) &&
-                $data['display'] == PDFJS_FOLDER_DISPLAY_INLINE) {
+                $data['display'] == OMPDF_MANAGER_DISPLAY_INLINE) {
             $errors['completion'] = get_string('noautocompletioninline', 'ompdf');
         }
 

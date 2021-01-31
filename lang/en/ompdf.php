@@ -59,4 +59,3 @@ $string['openinnewtab_help'] = 'If enabled, PDFs will open in new tabs or window
 $string['showdownloadlinks'] = 'Show links for downloading PDFs';
 $string['showdownloadlinks_help'] = "If enabled, each PDF.js-based link will be followed by a link to download the PDF.\n\nThis can be useful on mobile devices where PDF.js may use too much memory or be too slow to work satisfactorily.";
 $string['eventviewall'] = "View All";
-$string['eventviewed'] = "View";

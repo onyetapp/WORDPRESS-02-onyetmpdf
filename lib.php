@@ -32,9 +32,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 // Display folder contents on a separate page.
-define('PDFJS_FOLDER_DISPLAY_PAGE', 0);
+define('OMPDF_MANAGER_DISPLAY_PAGE', 0);
 // Display folder contents inline in a course.
-define('PDFJS_FOLDER_DISPLAY_INLINE', 1);
+define('OMPDF_MANAGER_DISPLAY_INLINE', 1);
 
 /**
  * Returns whether the module supports a feature or not.
@@ -233,7 +233,7 @@ function ompdf_get_coursemodule_info($cm) {
     $result = new cached_cm_info();
     $result->name = $instance->name;
 
-    if ($instance->display == PDFJS_FOLDER_DISPLAY_INLINE) {
+    if ($instance->display == OMPDF_MANAGER_DISPLAY_INLINE) {
         // Store something in customdata just to flag inline mode.
         $fdata = new stdClass();
         $fdata->inline = true;
