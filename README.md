@@ -1,6 +1,7 @@
 <div align="center">
-    <img src="pix/icon.png">
+    <img src="pix/ompdf-logo.png">
 </div>
+
 # OMPDF (Onyet Activity:Moodle - PDF Folder)
 
 How PDFs are opened in browsers seem to depend on many things, like which
