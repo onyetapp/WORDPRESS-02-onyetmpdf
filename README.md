@@ -35,13 +35,9 @@ There are a few options:
     * Should subfolders be shown expanded or not?
     * Should download links be displayed for each PDF so that users with devices not capable of displaying all PDFs through PDF.js have another option?
 
-## Example screenshots
+## Example
 
-![Screenshot](pix/screenshot-1.png?raw=true)
-
-![Screenshot](pix/screenshot-2.png?raw=true)
-
-![Settings Screenshot](pix/screenshot-3.png?raw=true)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oDLCNRJa9YI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Installation
 
