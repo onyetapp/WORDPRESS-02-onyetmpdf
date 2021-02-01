@@ -39,6 +39,8 @@ There are a few options:
 
 [![Youtube Video](https://img.youtube.com/vi/oDLCNRJa9YI/0.jpg)](https://www.youtube.com/watch?v=oDLCNRJa9YI)
 
+Klick to play video sample.
+
 ## Installation
 
 Unzip the zip file in the `mod` folder of the Moodle directory and, if
