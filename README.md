@@ -37,7 +37,7 @@ There are a few options:
 
 ## Example
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oDLCNRJa9YI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Youtube Video](https://img.youtube.com/vi/oDLCNRJa9YI/0.jpg)](https://www.youtube.com/watch?v=oDLCNRJa9YI)
 
 ## Installation
 
